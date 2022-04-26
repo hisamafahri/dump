@@ -12,6 +12,6 @@ fn main() {
             .expect("\x1B[41;1m\x1B[37;1m ERROR: \x1B[0m\x1B[0m failed to run command");
 
         println!("{}", String::from_utf8_lossy(&cmd.stderr));
-        println!("{}", String::from_utf8_lossy(&cmd.stdout));
+        // println!("{}", String::from_utf8_lossy(&cmd.stdout));
     });
 }
