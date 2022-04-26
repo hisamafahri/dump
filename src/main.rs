@@ -4,7 +4,7 @@ use std::process;
 fn main() {
     return future::block_on(async {
         let cmd = process::Command::new("git")
-            .args(["push", "origin", "master"])
+            .args(["push", "origin", "main"])
             .stderr(std::process::Stdio::piped())
             .stdout(std::process::Stdio::piped())
             .stdin(std::process::Stdio::null())
